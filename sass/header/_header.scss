@@ -1,0 +1,122 @@
+@import "extends";
+@import "mixins";
+@import "keyframes";
+
+/* HEADER */
+
+header {
+   height: 100vh;
+   background: url("../images/dubai 1.jpg") no-repeat;
+   background-size: cover;
+   position: relative;
+   background-color: #0f485c;
+
+   /* NAVIGATION */
+
+   nav {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @extend %animacionOpacity;
+
+      /* H1 */
+      & h1 {
+         margin: 16px;
+         color: black;
+         text-shadow: 1px 1px 1px $colorBoxShadown;
+      }
+
+      /* MENU */
+
+      .menu {
+         @include size(70%, 180px);
+         display: flex;
+         flex-direction: column;
+         list-style: none;
+         padding: 16px 0px 16px 0px;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+         background-color: rgba(255, 255, 255, 0.8);
+         color: black;
+         box-shadow: 1px 1px 1px $colorBoxShadown;
+
+         & li {
+            display: inline-block;
+            transition: 1s;
+
+            & a {
+               display: block;
+               width: 100%;
+               text-align: center;
+               text-decoration: none;
+               text-transform: uppercase;
+               color: inherit;
+               transition: 1s;
+               font-size: larger;
+
+               &:hover {
+                  text-shadow: 1px 1px 1px $colorBoxShadown;
+                  transform: scale(1.1);
+               }
+            }
+         }
+      }
+   }
+}
+
+/* SEARCH HEADER */
+
+.search-header {
+   position: absolute;
+   width: auto;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 5px;
+   perspective: 700px;
+
+   & .rotate3d {
+      transform-style: preserve-3d;
+      transition: 1s;
+      border-radius: 5px;
+      border: 0.1px solid $colorBoxShadown;
+      box-shadow: 1px 1px 10px $primaryColor;
+      animation: rotar 3s, cambiarSombra 2s infinite linear;
+
+      & input {
+         @include size(250px, 50px);
+         border: 0;
+         border-radius: 5px;
+         padding-left: 20px;
+         padding-right: 30px;
+         font-size: 15px;
+         cursor: pointer;
+         text-align: center;
+         background-color: rgba(255, 255, 255, 0.7);
+         transition: 1s ease;
+
+         &:hover {
+            @include size(260px, 60px);
+         }
+
+         &::placeholder {
+            color: #0a3547;
+         }
+
+         &:focus {
+            cursor: text;
+         }
+      }
+   }
+
+   /* BUTTON SEARCH*/
+   & button {
+      height: 50px;
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      border: 0;
+      background: 0 0;
+   }
+}

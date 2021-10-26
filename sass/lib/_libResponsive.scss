@@ -1,0 +1,137 @@
+@media all and (min-width: 640px) {
+   .t-12 {
+      width: 100%;
+   }
+   .t-11 {
+      width: 91.66666667%;
+   }
+   .t-10 {
+      width: 83.33333333%;
+   }
+   .t-9 {
+      width: 75%;
+   }
+   .t-8 {
+      width: 66.66666667%;
+   }
+   .t-7 {
+      width: 58.66666666%;
+   }
+   .t-6 {
+      width: 50%;
+   }
+   .t-5 {
+      width: 41.66666667%;
+   }
+   .t-4 {
+      width: 33.33333333%;
+   }
+   .t-3 {
+      width: 25%;
+   }
+   .t-2 {
+      width: 16.66666667%;
+   }
+   .t-1 {
+      width: 8.33333333%;
+   }
+}
+
+@media all and (min-width: 960px) {
+   header {
+      background: url("../images/dubai 2.jpg") no-repeat;
+      background-size: cover;
+   }
+
+   .p-12 {
+      width: 100%;
+   }
+   .p-11 {
+      width: 91.66666667%;
+   }
+   .p-10 {
+      width: 83.33333333%;
+   }
+   .p-9 {
+      width: 75%;
+   }
+   .p-8 {
+      width: 66.66666667%;
+   }
+   .p-7 {
+      width: 58.66666666%;
+   }
+   .p-6 {
+      width: 50%;
+   }
+   .p-5 {
+      width: 41.66666667%;
+   }
+   .p-4 {
+      width: 33.33333333%;
+   }
+   .p-3 {
+      width: 25%;
+   }
+   .p-2 {
+      width: 16.66666667%;
+   }
+   .p-1 {
+      width: 8.33333333%;
+   }
+}
+
+@media all and (min-width: 1400px) {
+   .s-12 {
+      width: 100%;
+   }
+   .s-11 {
+      width: 91.66666667%;
+   }
+   .s-10 {
+      width: 83.33333333%;
+   }
+   .s-9 {
+      width: 75%;
+   }
+   .s-8 {
+      width: 66.66666667%;
+   }
+   .s-7 {
+      width: 58.66666666%;
+   }
+   .s-6 {
+      width: 50%;
+   }
+   .s-5 {
+      width: 41.66666667%;
+   }
+   .s-4 {
+      width: 33.33333333%;
+   }
+   .s-3 {
+      width: 25%;
+   }
+   .s-2 {
+      width: 16.66666667%;
+   }
+   .s-1 {
+      width: 8.33333333%;
+   }
+}
+
+/* HEADER RESPONSIVE */
+
+@media all and (min-width: 640px) {
+}
+
+@media all and (min-width: 960px) {
+   header nav .menu {
+      @include size(100%, 50px);
+      display: flex;
+      flex-direction: row;
+   }
+}
+
+@media all and (min-width: 1400px) {
+}

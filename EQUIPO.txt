@@ -1,0 +1,7 @@
+Gustavo:Header,
+
+Gilary:Slider, 
+
+Daniela:Footer,
+
+Darrel:Main
