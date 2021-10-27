@@ -1,7 +1,8 @@
 @import "variables/variables";
 @import "lib/lib";
-@import "header/keyframes";
 @import "header/header";
+@import "components/slider";
+@import "components/cards";
 @import "footer/footer";
 @import "lib/libResponsive";
 
@@ -31,6 +32,7 @@ html {
 }
 
 .intro {
+   padding: 20px;
    text-align: center;
    font-size: 1.5em;
    color: #0f485c;
@@ -72,7 +74,7 @@ html {
 .rectangulo {
    width: 100%;
    height: auto;
-   background: #48657c;
+   background-color: linear-gradient(to bottom, $thirdColor, $secondColor);
 }
 
 .group li {
@@ -87,34 +89,3 @@ html {
    padding-left: auto;
    color: #cce5f2;
 }
-
-.formulario-wrapper {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -ms-flex-wrap: wrap;
-   flex-wrap: wrap;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
-   justify-content: space-between;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
-}
-.formulario-wrapper .formulario-wrapper {
-   width: 320px;
-}
-
-.formulario-wrapper .formulario-mail {
-   width: 100%;
-   max-width: 580px;
-}
-
-.row-footer {
-   height: 50px;
-   font-size: 1em;
-   color: #cce5f2;
-   text-align: center;
-}
-
-/* crd */

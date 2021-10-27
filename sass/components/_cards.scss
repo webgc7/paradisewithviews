@@ -1,0 +1,96 @@
+.row {
+   width: 100%;
+   height: fit-content;
+   margin-top: 10px;
+}
+.flip_container {
+   background-color: transparent;
+   width: 90%;
+   height: fit-content;
+   margin: 10px;
+}
+
+.row h2,
+.row h1 {
+   width: 100%;
+   text-align: center;
+}
+.row .card {
+   width: 100%;
+   height: 400px;
+   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.1);
+   backface-visibility: hidden;
+}
+.row .card img {
+   width: 95%;
+   height: 80%;
+   // clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 77%, 48% 99%, 20% 100%, 0 100%, 0% 20%);
+}
+.row .card h2,
+.row .card h3 {
+   width: 100%;
+   margin: 20px;
+}
+.row .card .more_information_btn {
+   width: 50%;
+   height: 40px;
+   border: none;
+   margin: 10px;
+   transition: 0.4s;
+}
+.row .card .more_information_btn:hover {
+   border-radius: 50%;
+}
+button,
+.row .card:hover {
+   cursor: pointer;
+}
+
+.flip_contain {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+.flip_container:hover .flip_contain {
+   transform: rotateY(180deg);
+}
+
+.front {
+   position: absolute;
+}
+.back {
+   transform: rotateY(180deg);
+}
+
+.row,
+.row .card {
+   @include display_mode_flex_centered;
+}
+.row .card {
+   background-color: $paper;
+}
+.row h2,
+.row h1 {
+   color: $thirdColor;
+   text-decoration: underline $secondColor;
+}
+.row .more_information_btn {
+   color: $paper;
+   background-color: $secondColor;
+}
+
+/* RESPONSIVE */
+
+@media all and (min-width: 960px) {
+   .flip_container {
+      width: 25%;
+   }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+   .flip_container {
+      width: 45%;
+   }
+}

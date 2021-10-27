@@ -120,3 +120,14 @@ header {
       background: 0 0;
    }
 }
+
+/* HEADER RESPONSIVE */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+   header nav .menu {
+      @include size(100%, 50px);
+      display: flex;
+      flex-direction: row;
+   }
+}

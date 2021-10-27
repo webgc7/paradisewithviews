@@ -2,22 +2,8 @@
    /* GIRAR 3D */
    100% {
       transform: rotate3d(1, 1, 1, 360deg);
+      -webkit-transform: rotate3d(1, 1, 1, 360deg);
       box-shadow: 10px 10px 10px $primaryColor;
-   }
-}
-
-@keyframes cambiarSombra {
-   25% {
-      box-shadow: 1px 1px 2px $colorBoxShadown;
-   }
-   50% {
-      box-shadow: 1px 1px 3px $colorBoxShadown;
-   }
-   75% {
-      box-shadow: 1px 1px 2px $colorBoxShadown;
-   }
-   100% {
-      box-shadow: 1px 1px 1px $colorBoxShadown;
    }
 }
 
